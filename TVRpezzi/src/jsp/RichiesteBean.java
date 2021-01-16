@@ -4,8 +4,7 @@ import java.time.LocalDate;
 
 public class RichiesteBean {
 
-    private String numero, ente;
-    private String dataRilascio, dataScad;
+    private String numero, ente, dataRilascio, dataScad;
 	
 	public RichiesteBean() {
 		
