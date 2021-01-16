@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:controller="jsp.sendControllerGUI" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+  <children>
+      <HBox>
+         <children>
+            <Text fill="#449108" strokeType="OUTSIDE" strokeWidth="0.0" text="TVRide">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </HBox.margin>
+            </Text>
+            <ButtonBar buttonOrder="" prefHeight="40.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+              <buttons>
+                <Button alignment="CENTER" focusTraversable="false" mnemonicParsing="false" text="Log out" textAlignment="CENTER" textFill="RED" />
+              </buttons>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </ButtonBar>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="130.0">
+               <children>
+                  <VBox layoutX="38.0" layoutY="60.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Separator prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HOME">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Text>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RESERVATION">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Reservations" underline="true">
+                           <VBox.margin>
+                              <Insets left="16.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve a Seat" underline="true">
+                           <VBox.margin>
+                              <Insets left="16.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Text>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RIDE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Your Rides" underline="true">
+                           <VBox.margin>
+                              <Insets left="16.0" />
+                           </VBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Offer a Ride">
+                           <VBox.margin>
+                              <Insets left="16.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PROFILE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MyRide" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Send Request" underline="true">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Separator prefHeight="6.0" prefWidth="151.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox spacing="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter License Detail">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="16.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefWidth="200.0" spacing="24.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numero della patente" textOrigin="CENTER" wrappingWidth="121.9820556640625">
+                                 <HBox.margin>
+                                    <Insets top="4.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <TextField fx:id="numberTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="142.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="8.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefWidth="200.0" spacing="24.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data di rilascio">
+                                 <HBox.margin>
+                                    <Insets right="14.0" top="4.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <DatePicker fx:id="DataRilascioInput" prefHeight="26.0" prefWidth="128.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="24.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data di scadenza">
+                                 <HBox.margin>
+                                    <Insets right="3.0" top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <DatePicker fx:id="DataScadInput" prefHeight="26.0" prefWidth="124.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="24.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rilasciata da:">
+                                 <HBox.margin>
+                                    <Insets top="4.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <ChoiceBox fx:id="EnteInput" prefWidth="150.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="ButtonReq" alignment="CENTER_RIGHT" contentDisplay="RIGHT" defaultButton="true" mnemonicParsing="false" onAction="#send" text=" Send Request" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="13.0" top="16.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+               </children>
+          </AnchorPane>
+         </children>
+      </HBox>
+  </children>
+</VBox>
